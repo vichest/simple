@@ -1,0 +1,37 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+contract challenge{
+uint private UnsignedNumber = 100;
+int private signedNumber = -100;
+string private String = "challenge";
+bool private element = true; 
+function getUnsignedNumber() public view returns(uint) 
+{
+    return UnsignedNumber;
+}
+function getString() public view returns(string memory)
+{
+    return String;
+}
+function getSignedNumber() public view returns(int)
+{
+    return signedNumber;
+}
+function getElement() public view returns(bool)
+{
+    return element;
+}
+function setUnsignedNumber(uint a) public
+{
+    UnsignedNumber = a;
+} 
+function setSignedNumber(int a) public 
+{
+    signedNumber = a;
+}
+function setString(string memory a) public
+{
+    String=a;
+} 
+
+}
